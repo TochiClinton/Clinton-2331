@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--version 2.0-->
+    <meta charset="UTF-8">
+        
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+        <title>Fruity basket[game 🎮]</title>
+         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    </head>
+   
+    <body>
+    <div class="load">
+       <span> LOADING...</span>
+    </div>
+     <audio autoplay loop>
+        <source src="http://66.90.93.122/ost/makeruna-makendo-2-snes/gqztgqcq/18_Battle%20with%20King.mp3" type="audio/mpeg">
+        <!--my local memory, i have my reasons for doing this-->
+        <source src="file:///storage/emulated/0/Download/18_Battle%20with%20King.mp3" type="audio/mpeg">
+    </audio>
+    <div id="cover">
+         <div><span id="difficulty">DIFFICULTY</br><select>
+           <option onchange="difficulty()" value="1">Easy</option>
+           <option onchange="difficulty()" value="2" selected>Medium</option>
+           <option onchange="difficulty()" value="3">Hard</option>
+          </select></span></div>
+        <button id="coverbutton" onclick="gameplay()">PLAY</button>
+    </div>
+        <div id="container"><div id="board">
+          SCORE: <span id="score">0</span>
+         
+         <span class="PP">▶️</span> 
+          <span class="PP">⏸</span>
+        
+          <span id="lifebar">Life:<progress id="life" min="0" max="6" value="6"></progress></span>
+          <p>FRUITY BASKET</p>
+          
+          <span id="sound">🔈</span>
+         
+          
+        </div>
+       
+        <div>
+        <span class="fall" id="i"></span>
+        <span class="fall" id="ii"></span>
+        <span class="fall" id="iii"></span>
+        <span class="fall" id="iv"></span>
+        <span class="fall" id="v"></span>
+        <span class="fall" id="vi"></span>
+        <span id="avatar">
+            🛒
+        </span></div>
+         <div>
+        <span class="fall2" id="vii"></span>
+        <span class="fall2" id="viii"></span>
+       <span class="fall2" id="ix"></span>
+       <span class="fall2" id="x"></span>
+       <span class="fall2" id="xi"></span>
+       <span class="fall2" id="xii"></span> 
+        </div>
+        <div id="controllerboard">
+          
+        <div id="controller">
+        <button id="btn2"><</button>
+            <button id="btn1">></button>
+            
+        </div>
+        </div>
+        </div>
+        <div id="gameover">
+        <div>
+           <p>GAMEOVER!</p> 
+           <P id="writescore"></P>
+        </div>
+            <button id="again">PLAY AGAIN</button>
+            </div>
+            <div id="pausebox"><h1>Paused</h1></div>
+            <div id="initial">
+            <span id="exit">x</span>
+                <h3>Instructions</h3>
+                
+          Navigate ur basket using the yellow button's below, so as to catch the falling items. You can also pause nd subsequently play the game, check the pause icon above.
+          <p>There are three categories of items, namely:
+     <ul align="left">
+         <li>Score boosters</li>
+         <li>Health boosters</li>
+         <li>Life destroyers</li>
+     </ul> Use ur intuition to know which that is which!. </p>
+            </div>
+        
+    </body>
+</html>
